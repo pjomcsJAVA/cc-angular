@@ -1,3 +1,4 @@
+import { ClarityModule } from "@clr/angular";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
@@ -7,7 +8,7 @@ import { SharedModule } from "../shared/shared.module";
 import { CustomerCardComponent } from "./customer-card/customer-card.component";
 
 @NgModule({
-  imports: [CommonModule, CustomersRoutingModule, SharedModule],
+  imports: [CommonModule, CustomersRoutingModule, SharedModule, ClarityModule],
   declarations: [CardgridComponent, CustomerCardComponent]
 })
 export class CustomersModule {}

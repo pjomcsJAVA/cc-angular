@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from "@angular/core";
 import { ICustomer } from "../../shared/interfaces";
+import { ClarityModule } from "@clr/angular";
 
 @Component({
   selector: "app-customer-card",
