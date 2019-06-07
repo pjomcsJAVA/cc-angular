@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { ICustomer } from "../../shared/interfaces";
 import { LoggerService } from "../../core/services/logger.service";
 import { DataService } from "../../core/services/data.service";
@@ -16,7 +16,9 @@ export class CardgridComponent implements OnInit {
     private logger: LoggerService
   ) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.getCustomers();
+  }
 
   getCustomers() {
     this.dataService.getCustomers().subscribe(
