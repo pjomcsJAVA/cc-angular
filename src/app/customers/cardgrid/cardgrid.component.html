@@ -1,12 +1,13 @@
 <div class="clr-row">
   <div class="clr-col">
     <div class="clr-row">
-      <div
+      {{ customers | json }}
+      <!-- <div
         class="clr-col-lg-5 clr-col-md-8 clr-col-12"
         *ngFor="let customer of customers"
       >
         <app-customer-card [customer]="customer"></app-customer-card>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

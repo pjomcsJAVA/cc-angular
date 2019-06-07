@@ -2,7 +2,7 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { CardgridComponent } from "./cardgrid/cardgrid.component";
 
-const routes: Routes = [{ path: "cardgrid", component: CardgridComponent }];
+const routes: Routes = [{ path: "", component: CardgridComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

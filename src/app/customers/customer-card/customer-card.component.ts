@@ -7,7 +7,7 @@ import { ICustomer } from "../../shared/interfaces";
   styleUrls: ["./customer-card.component.css"]
 })
 export class CustomerCardComponent implements OnInit {
-  @Input() customers: ICustomer[] = [];
+  @Input() customer: ICustomer;
 
   constructor() {}
 
